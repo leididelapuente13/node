@@ -1,2 +1,10 @@
 {"at":"2024-10-13T04:27:07.470Z","level":"error","message":"error something went wrong","service":"app.ts","timestamp":"2024-10-13T04:27:07.471Z"}
 {"at":"2024-10-13T18:18:24.522Z","level":"error","message":"error something went wrong","service":"app.ts","timestamp":"2024-10-13T18:18:24.522Z"}
+{"at":"2024-10-30T19:34:43.730Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:34:43.732Z"}
+{"at":"2024-10-30T19:34:46.877Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:34:46.878Z"}
+{"at":"2024-10-30T19:43:37.009Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:43:37.010Z"}
+{"at":"2024-10-30T19:43:38.555Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:43:38.556Z"}
+{"at":"2024-10-30T19:44:44.898Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:44:44.899Z"}
+{"at":"2024-10-30T19:44:45.986Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:44:45.988Z"}
+{"at":"2024-10-30T19:46:18.447Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:46:18.447Z"}
+{"at":"2024-10-30T19:47:09.309Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:47:09.311Z"}
