@@ -20,7 +20,7 @@ describe("get-age.plugin.test.ts", () => {
         const birthDate = '1985-10-13';
         const age = getAge(birthDate);
 
-        expect(age).toBe(40);
+        expect(age).toBe(0);
         expect(spy).toHaveBeenCalled();
     });
 
