@@ -17,3 +17,11 @@
 {"at":"2024-10-30T19:46:18.447Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:46:18.447Z"}
 {"at":"2024-10-30T19:47:09.309Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:47:09.311Z"}
 {"level":"info","message":"test message","service":"test service","timestamp":"2024-10-30T19:47:25.895Z"}
+{"level":"info","message":"test message","service":"test service","timestamp":"2024-10-30T19:52:46.772Z"}
+{"at":"2024-10-30T19:52:46.863Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-30T19:52:46.864Z"}
+{"level":"info","message":"test message","service":"test service","timestamp":"2024-10-31T17:18:35.975Z"}
+{"at":"2024-10-31T17:18:36.066Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-31T17:18:36.066Z"}
+{"level":"info","message":"test message","service":"test service","timestamp":"2024-10-31T17:22:36.138Z"}
+{"at":"2024-10-31T17:22:36.258Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-31T17:22:36.259Z"}
+{"level":"info","message":"test message","service":"test service","timestamp":"2024-10-31T17:22:58.473Z"}
+{"at":"2024-10-31T17:22:58.550Z","level":"error","message":"error test message error","service":"test service","timestamp":"2024-10-31T17:22:58.552Z"}

@@ -5,9 +5,8 @@
   "scripts": {
     "test": "jest",
     "dev": "nodemon",
-    "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/app.js",
-    "test": "jest",
+    "build": "npm run test && rimraf ./dist && tsc",
+    "start": "node dist/app.js",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
