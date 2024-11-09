@@ -1,13 +1,10 @@
-let outputMessage : string = ''
-const base : number = 5;
-const headerMessage : string =
-    `==================================== 
-     Tabla de multiplicacion del ${base}
-     ====================================`
+import {yarg} from "./plugins/yargs.plugin";
 
-for(let i: number=1; i <= 10; i++){
-    outputMessage += `${base} x ${i} = ${base * i}\n`;
-}
+// anonymous function auto called
+(
+    ()=>{
+        console.log("Executed")
+    }
+)();
 
-console.log(headerMessage);
-console.log(outputMessage)
+console.log(yarg)
