@@ -1,16 +1,16 @@
 import fs from "fs";
 
-export interface SaveFileUsecase {
+export interface SaveFileUseCase {
     execute: (options: Options) => boolean;
 }
 
 export interface Options {
-    fileContent : string;
-    fileDestination: string;
-    fileName   : string;
+    fileContent         : string;
+    fileDestination?    : string;
+    fileName?           : string;
 }
 
-export class SaveFile implements SaveFileUsecase {
+export class SaveFile implements SaveFileUseCase {
     constructor(
         /**
          * StrorageRepository
@@ -18,7 +18,7 @@ export class SaveFile implements SaveFileUsecase {
     ) {
     }
 
-    execute({fileContent, fileDestination, fileName}: Options): boolean {
+    execute({fileContent, fileDestination='outputs', fileName='table'}: Options): boolean {
         try {
             fs.mkdirSync(fileDestination, {recursive: true})
             fs.writeFileSync(`${fileDestination}/${fileName}.txt`, fileContent, 'utf8');

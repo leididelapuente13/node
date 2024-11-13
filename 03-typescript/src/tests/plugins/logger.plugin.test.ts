@@ -3,7 +3,7 @@ import {logger as winstonLogger} from "../../plugins/logger.plugin";
 
 describe("loggerPlugin", () => {
     test('buildLogger should return a function logger', ()=>{
-        const logger = buildLogger('test');
+        const logger = buildLogger('test');7 
 
         expect(typeof logger.log).toBe('function');
         expect(typeof logger.error).toBe('function');
