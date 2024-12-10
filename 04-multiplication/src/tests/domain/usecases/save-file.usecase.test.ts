@@ -59,8 +59,7 @@ describe("Save File UseCase", () => {
             ()=>{throw new Error('Testing error: Directory could not be created');},
         )
 
-
-        const result = saveFile.execute({fileContent: "error test content",})
+        const result = saveFile.execute({fileContent: "error test content"})
 
         expect(result).toBe(false);
 
