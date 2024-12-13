@@ -23,5 +23,4 @@ describe("get-age.plugin.test.ts", () => {
         expect(age).toBe(0);
         expect(spy).toHaveBeenCalled();
     });
-
 })

@@ -1,5 +1,6 @@
-node_modules
+-*
++de_modules
 .env
 dist
 .log
-coverage
+coverage*-!/04-multiplication/src/tests/presentation/server-app.test.ts
