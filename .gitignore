@@ -2,4 +2,5 @@ node_modules
 .env
 dist
 .log
-coverage*-!/04-multiplication/src/tests/presentation/server-app.test.ts
+coverage*
+.idea
