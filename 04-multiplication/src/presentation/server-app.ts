@@ -10,13 +10,17 @@ interface runOptions {
 }
 
 export class ServerApp {
-    static run ({base, limit, showTable, fileName, fileDestination}: runOptions) {
+    static run({base, limit, showTable, fileName, fileDestination}: runOptions) {
         console.log("Server running...")
 
         const table = new CreateTable().execute({base, limit});
-        const wasCreated = new SaveFile().execute({fileContent: table, fileName: fileName, fileDestination: fileDestination});
+        const wasCreated = new SaveFile().execute({
+            fileContent: table,
+            fileName: fileName,
+            fileDestination: fileDestination
+        });
 
-        if(showTable) {
+        if (showTable) {
             console.log(table);
         }
 
