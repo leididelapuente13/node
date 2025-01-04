@@ -8,13 +8,17 @@ interface ShapeServiceUseCase {
 type SuccessCallBack = (() => void | undefined);
 type ErrorCallback = ((error: string) => void | undefined);
 
-export class  CheckService implements ShapeServiceUseCase {
+export class CheckMultipleService implements ShapeServiceUseCase {
 
     constructor(
-        private readonly logRepository: LogRepository,
+        private readonly logRepository: LogRepository[],
         private readonly successCallback: SuccessCallBack,
         private readonly errorCallback: ErrorCallback
     ) {
+    }
+
+    private callLogsRepository(log: LogEntity){
+        this.logRepository.forEach(logRepository => logRepository.saveLog(log));
     }
 
     public async execute(url: string): Promise<boolean> {
@@ -28,7 +32,7 @@ export class  CheckService implements ShapeServiceUseCase {
                 message: `Service ${url} working`,
                 origin: 'check.service.ts'
             });
-            await this.logRepository.saveLog(log)
+            await this.callLogsRepository(log)
             this.successCallback && this.successCallback()
             return true;
         } catch (error) {
@@ -38,7 +42,7 @@ export class  CheckService implements ShapeServiceUseCase {
                 message: `Service ${url} is not working`,
                 origin: 'check.service.ts'
             })
-            await this.logRepository.saveLog(log)
+            await this.callLogsRepository(log)
             this.errorCallback && this.errorCallback(errorMessage)
             return false;
         }
