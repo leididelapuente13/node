@@ -1,0 +1,8 @@
+### POST API LOGIN
+POST http://localhost:3000/api/auth/login
+
+### POST API REGISTER
+POST http://localhost:3000/api/auth/register
+
+### GET API VALIDATE TOKEN
+GET http://localhost:3000/api/auth/validate-email/123abc456
