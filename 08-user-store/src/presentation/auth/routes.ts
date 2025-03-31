@@ -1,15 +1,16 @@
 import {Router} from "express";
 import {AuthController} from "./controller.controller";
+import {AuthService} from "../services/auth.service";
 
 export class AuthRoutes {
     static get routes(): Router{
         const router = Router();
+        const authService: AuthService = new AuthService();
+        const authController = new AuthController(authService);
 
-        const controller = new AuthController();
-
-        router.post('/login', controller.loginUser);
-        router.post('/register', controller.registerUser);
-        router.get('/validate-email/:token', controller.validateEmail);
+        router.post('/login', authController.loginUser);
+        router.post('/register', authController.registerUser);
+        router.get('/validate-email/:token', authController.validateEmail);
 
         return router;
     }
